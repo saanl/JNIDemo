@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <script>
+         function callAndroid(){
+            test.call1("JS调用了Android方法");
+         }
+         function testTwoCallAndroid(){
+            document.location = "js://webview?key1=fdjsfjds&key2=dasewqewqeww";
+         }
+         function tests(){
+            var str = "";
+            for(var key in test){
+                str =+ "key="+key+"    value="+test[key];
+            }
+            document.getElementById('div').innerText = str;
+
+         }
+    </script>
+</head>
+<body>
+    <div id="div"></div>
+    <button type="button" id="button1" onclick="callAndroid()">点击按钮通过方式一调用Android方法</button>
+    <button type="button" id="button2" onclick="testTwoCallAndroid()">点击按钮通过方式二调用Android方法</button>
+    <button type="button" id="button3" onclick="tests()">打印test</button>
+</body>
+</html>
