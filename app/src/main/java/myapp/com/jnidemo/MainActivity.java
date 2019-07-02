@@ -82,9 +82,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void initAppCenter(){
-        AppCenter.start(getApplication(), "35168800-1920-4855-8ac0-7f32d7942e58",
+        AppCenter.start(getApplication(), "4761c797-6a06-47ad-afaf-e9cb72c1c57a",
                 Analytics.class, Crashes.class);
-        AppCenter.start(getApplication(), "35168800-1920-4855-8ac0-7f32d7942e58", Analytics.class, Crashes.class);
+        AppCenter.start(getApplication(), "4761c797-6a06-47ad-afaf-e9cb72c1c57a",
+                Analytics.class, Crashes.class);
 
         HashMap<String, String> properties = new HashMap<>();
         properties.put("Model", android.os.Build.MODEL);
